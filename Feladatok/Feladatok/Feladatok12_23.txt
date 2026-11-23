@@ -1,0 +1,57 @@
+﻿
+
+12. Feladat:
+
+Program.cs -ben hozz létre 3 rendezőt:
+
+Director jackson = new Director() {Name = "Jackson"};
+Director kurosawa = new Director() {Name = "Kurosawa"};
+Director scott = new Director() {Name = "Scott"};
+
+Hozz létre 5 filmet:
+Movie abc = new Movie() {Name = "abc", Length = 123, Directo = jackson};
+Movie abcd = new Movie() {Name = "abcd", Length = 230, Directo = jackson};
+Movie samurai = new Movie() {Name = "samurai", Length = 89, Directo = kurosawa};
+Movie alien = new Movie() {Name = "alien", Length = 117, Directo = scott};
+Movie runner = new Movie() {Name = "runner", Length = 117, Directo = scott};
+
+Hozz létre egy 'Movies' listát, ami filmeket tartalmaz, és add hozzá az előbbi 5 filmet.
+
+
+13. Feladat:
+Írd ki a listában minden film címét.
+
+14. Feladat:
+Írd ki hány film van a listában.
+
+15.Feladat:
+Írd ki, hogy a samurai film benne van-e a listában
+Ha igen, töröld a listából
+Írd ki ismét minden film címét a listában.
+
+16.Feladat
+Hozz létre egy új filmet és illeszd meg a lista végére
+Írd ki minden, a listában lévő film címét.
+
+17.Feladat
+Írd ki a listában lévő minden film címét és hosszát
+
+18.Feladat:
+Keresd meg a legrövidebb filmet, és írd ki a címét a konzolra
+
+19.Feladat:
+Keresd meg a leghosszabb filmet és írd ki a címét a konzolra
+
+20. Feladat:
+Keresd meg a listában a 2. filmet és írd ki a konzolra a címét és a rendezőjének a nevét
+
+21. Feladat
+Írd ki, hogy mennyi az átlag filmhossz a listában lévő filmeknél!
+
+22. Feladat
+Keresd meg, hogy melyik filmnek van a leghosszabb címe és írd ki a címét!
+
+23. Feladat
+Írd ki minden a listában lévő filmre:
+Film címe, hossza és rendező neve
+
