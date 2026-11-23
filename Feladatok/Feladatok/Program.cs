@@ -9,24 +9,104 @@
              *      89, 125, 215, 102, 378, 101, 101, 86, 97, 187
              * - írd ki konzolra az összes filmhosszat a listából
              */
+            List<int> filmHossz = new List<int>() { 89, 125, 215, 102, 378, 101, 101, 86, 97, 187 };
+            foreach (int i in filmHossz) 
+            {
+                Console.WriteLine(i);
+            }
+
 
             //2. írd ki, hogy hány 'film' van a lsitában
-            
+
+            int counter = filmHossz.Count;
+            Console.WriteLine("\n 2.feladat");
+            Console.WriteLine(counter);
+
             //3. írd ki, hogy van-e 101 hosszú film a listában
+            Console.WriteLine("\n 3.feladat");
+
+            bool van = false;
+            foreach (int i in filmHossz) 
+            {
+                if (i == 101) 
+                {
+                    van = true;
+                    break;
+                }
+               
+            }
+            if (van)
+            {
+                Console.WriteLine("Van");
+            }
+            else 
+            {
+                Console.WriteLine("Nincs");
+            }
 
             //4. töröld ki a 101 hosszú filmet a listából és ezután írd ki újra a lista tartalmát és hogy jelenleg hány film van a listában
+            Console.WriteLine("\n 4.feladat");
+            filmHossz.Remove(101);
+
+            foreach (int i in filmHossz)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine();
+
+            counter = filmHossz.Count;
+            Console.WriteLine(counter);
 
             //5. illeszd be a 2. helyre a '123' számot
+            Console.WriteLine("\n 5.feladat");
+            filmHossz.Insert(1, 123);
+
+            foreach (int i in filmHossz)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine();
 
             //6. keresd meg a '123' hosszú film indexét a listában és irasd ki a konzolra
+            Console.WriteLine("\n 6. feladat");
+            int index123 = filmHossz.IndexOf(123);
+            Console.WriteLine(index123);
 
             //7. amit a 6-os feladatban kaptál indexet: töröld ki a számot ezen az indexen
+            Console.WriteLine("\n 7. feladat");
+            filmHossz.RemoveAt(index123);
+
+            Console.WriteLine();
 
             //8. irasd ki a listában lévő elemeket
+            Console.WriteLine("8. feladat");
+
+            foreach (int i in filmHossz)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine();
 
             //9. fordítsd meg a listában lévő elemek sorrendjét és írasd ki a konzolra újra a lista elemeit
+            Console.WriteLine("9. feladat");
+            filmHossz.Reverse();
+
+            foreach (int i in filmHossz)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine();
+
 
             //10. rendezd növekvő sorrendbe a lsta elemeit, és írd ki őkat a konzolra
+            Console.WriteLine("10. feladat");
+            filmHossz.Sort();
+
+            foreach (int i in filmHossz)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine();
         }
     }
 }
